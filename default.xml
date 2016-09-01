@@ -503,4 +503,6 @@
   <project name="platform/vendor/qcom/tellurium_32" path="device/qcom/msm8952_32"/>
   <project name="platform/vendor/qcom/tellurium_64" path="device/qcom/msm8952_64"/>
   <project name="toolchain/binutils"/>
+  <include name="aosp/remove.xml" />
+  <include name="aosp/aosp.xml" />
 </manifest>

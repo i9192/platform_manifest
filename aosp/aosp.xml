@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="git://github.com/" />
+  <project name="Evervolv/android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" remote="github" revision="mm-6.0" />
+
+</manifest>

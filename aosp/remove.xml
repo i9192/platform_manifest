@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remove-project name="device/generic/arm64"/>
+  <remove-project name="device/generic/armv7-a-neon"/>
+  <remove-project name="device/generic/common"/>
+  <remove-project name="device/generic/goldfish"/>
+  <remove-project name="device/generic/mini-emulator-arm64"/>
+  <remove-project name="device/generic/mini-emulator-armv7-a-neon"/>
+  <remove-project name="device/generic/mini-emulator-x86"/>
+  <remove-project name="device/generic/mini-emulator-x86_64"/>
+  <remove-project name="device/generic/qemu"/>
+  <remove-project name="device/generic/x86"/>
+  <remove-project name="device/generic/x86_64"/>
+  <remove-project name="device/google/accessory/arduino"/>
+  <remove-project name="device/google/accessory/demokit"/>
+  <remove-project name="device/google/atv"/>
+  <remove-project name="device/google/contexthub"/>
+  <remove-project name="kernel/msm-3.10" path="kernel"/>
+  <remove-project name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator"/>
+  <remove-project name="platform/vendor/qcom/tellurium_32" path="device/qcom/msm8952_32"/>
+  <remove-project name="platform/vendor/qcom/tellurium_64" path="device/qcom/msm8952_64"/>
+</manifest>
