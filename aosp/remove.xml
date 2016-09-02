@@ -17,6 +17,4 @@
   <remove-project name="device/google/contexthub"/>
   <remove-project name="kernel/msm-3.10" path="kernel"/>
   <remove-project name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator"/>
-  <remove-project name="platform/vendor/qcom/tellurium_32" path="device/qcom/msm8952_32"/>
-  <remove-project name="platform/vendor/qcom/tellurium_64" path="device/qcom/msm8952_64"/>
 </manifest>
