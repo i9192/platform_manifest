@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="git://codeaurora.org/quic/la" name="caf" review="codeaurora.org"/>
-  <default remote="caf" revision="LA.BR.1.3.6.c1_rb1.1"/>
+  <default remote="caf" revision="LA.BR.1.2.9_rb1.5"/>
   <project groups="pdk-cw-fs,pdk-fs" name="device/common"/>
   <project groups="pdk" name="device/generic/arm64"/>
   <project groups="pdk" name="device/generic/armv7-a-neon"/>
@@ -96,7 +96,6 @@
   <project groups="drm_hwcomposer" name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer"/>
   <project groups="pdk" name="platform/external/droiddriver" path="external/droiddriver"/>
   <project groups="pdk" name="platform/external/e2fsprogs" path="external/e2fsprogs"/>
-  <project groups="pdk" name="platform/external/e2fsprogs_custom" path="external/e2fsprogs_blocks"/>
   <project groups="pdk" name="platform/external/easymock" path="external/easymock"/>
   <project name="platform/external/ebtables" path="external/ebtables"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/external/eclipse-basebuilder" path="external/eclipse-basebuilder"/>
@@ -177,10 +176,8 @@
   <project groups="pdk" name="platform/external/libmicrohttpd" path="external/libmicrohttpd"/>
   <project groups="pdk" name="platform/external/libmpeg2" path="external/libmpeg2"/>
   <project groups="pdk" name="platform/external/libmtp" path="external/libmtp"/>
-  <project name="platform/external/libnetfilter_conntrack" path="external/libnetfilter_conntrack"/>
   <project groups="pdk" name="platform/external/libnfc-nci" path="external/libnfc-nci"/>
   <project groups="pdk" name="platform/external/libnfc-nxp" path="external/libnfc-nxp"/>
-  <project name="platform/external/libnfnetlink" path="external/libnfnetlink"/>
   <project groups="pdk" name="platform/external/libnl" path="external/libnl"/>
   <project groups="pdk" name="platform/external/libogg" path="external/libogg"/>
   <project groups="pdk" name="platform/external/libopus" path="external/libopus"/>
@@ -245,7 +242,6 @@
   <project groups="pdk" name="platform/external/ppp" path="external/ppp"/>
   <project groups="pdk" name="platform/external/proguard" path="external/proguard"/>
   <project groups="pdk" name="platform/external/protobuf" path="external/protobuf"/>
-  <project name="platform/external/qrngd" path="external/qrngd"/>
   <project groups="pdk" name="platform/external/regex-re2" path="external/regex-re2"/>
   <project groups="pdk" name="platform/external/replicaisland" path="external/replicaisland"/>
   <project groups="pdk" name="platform/external/rmi4utils" path="external/rmi4utils"/>
@@ -339,12 +335,14 @@
   <project groups="nvensense,pdk" name="platform/hardware/invensense" path="hardware/invensense"/>
   <project groups="pdk" name="platform/hardware/libhardware" path="hardware/libhardware"/>
   <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy"/>
-  <project groups="qcom,qcom_audio" name="platform/hardware/qcom/audio" path="hardware/qcom/audio"/>
+  <project groups="qcom,default" name="platform/hardware/qcom/audio" path="hardware/qcom/audio"/>
   <project groups="qcom" name="platform/hardware/qcom/bt" path="hardware/qcom/bt"/>
   <project groups="qcom,default" name="platform/hardware/qcom/camera" path="hardware/qcom/camera"/>
   <project groups="qcom,qcom_display" name="platform/hardware/qcom/display" path="hardware/qcom/display"/>
   <project groups="qcom,qcom_gps" name="platform/hardware/qcom/gps" path="hardware/qcom/gps"/>
+  <project groups="qcom" name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster"/>
   <project groups="qcom,default" name="platform/hardware/qcom/media" path="hardware/qcom/media"/>
+  <project groups="qcom,default" name="platform/hardware/qcom/sensors" path="hardware/qcom/sensors"/>
   <project groups="qcom_wlan" name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan"/>
   <project groups="pdk" name="platform/hardware/ril" path="hardware/ril"/>
   <project groups="pdk" name="platform/libcore" path="libcore"/>
@@ -488,7 +486,6 @@
   <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/external/libnfc-nci"/>
   <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/frameworks"/>
   <project groups="qcom" name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/bluetooth"/>
-  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr"/>
   <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices"/>
   <project name="platform/vendor/qcom-opensource/display-frameworks" path="vendor/qcom/opensource/display-frameworks"/>
   <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm"/>
@@ -498,11 +495,18 @@
   <project name="platform/vendor/qcom-opensource/rcs-service" path="vendor/qcom/opensource/rcs-service"/>
   <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services"/>
   <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima"/>
-  <project name="platform/vendor/qcom-opensource/wlan/qcacld-2.0" path="vendor/qcom/opensource/wlan/qcacld-2.0"/>
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut"/>
-  <project name="platform/vendor/qcom/tellurium_32" path="device/qcom/msm8952_32"/>
-  <project name="platform/vendor/qcom/tellurium_64" path="device/qcom/msm8952_64"/>
+  <project name="platform/vendor/qcom/ferrum" path="device/qcom/msm8909"/>
+  <project name="platform/vendor/qcom/ferrum_512" path="device/qcom/msm8909_512"/>
+  <project name="platform/vendor/qcom/ferrum_LMT" path="device/qcom/msm8909_LMT"/>
+  <project name="platform/vendor/qcom/msm8909w" path="device/qcom/msm8909w"/>
+  <project name="platform/vendor/qcom/msm8916" path="device/qcom/msm8916"/>
+  <project name="platform/vendor/qcom/msm8916_32" path="device/qcom/msm8916_32"/>
+  <project name="platform/vendor/qcom/msm8916_32_512" path="device/qcom/msm8916_32_512"/>
+  <project name="platform/vendor/qcom/msm8916_32_LMT" path="device/qcom/msm8916_32_LMT"/>
+  <project name="platform/vendor/qcom/msm8916_32_k64" path="device/qcom/msm8916_32_k64"/>
+  <project name="platform/vendor/qcom/msm8916_64" path="device/qcom/msm8916_64"/>
+  <project name="platform/vendor/qcom/msm8916_64_LMT" path="device/qcom/msm8916_64_LMT"/>
+  <project name="platform/vendor/qcom/plutonium" path="device/qcom/msm8994"/>
   <project name="toolchain/binutils"/>
-  <include name="aosp/remove.xml" />
-  <include name="aosp/aosp.xml" />
 </manifest>
